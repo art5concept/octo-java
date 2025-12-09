@@ -32,10 +32,13 @@ public class login extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         logo = new javax.swing.JLabel();
         back = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
+        txtuserlogin = new javax.swing.JTextField();
+        lg = new javax.swing.JLabel();
+        txtpassword = new javax.swing.JLabel();
+        txtusuario = new javax.swing.JLabel();
+        Jpasswrd = new javax.swing.JPasswordField();
+        btnInicio = new javax.swing.JButton();
+        btnExit = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -52,23 +55,29 @@ public class login extends javax.swing.JFrame {
         back.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/firstbg.jpeg"))); // NOI18N
         BG.add(back, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 0, -1, -1));
 
-        jTextField1.setText("jTextField1");
-        jTextField1.addActionListener(new java.awt.event.ActionListener() {
+        txtuserlogin.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField1ActionPerformed(evt);
+                txtuserloginActionPerformed(evt);
             }
         });
-        BG.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 250, -1, -1));
+        BG.add(txtuserlogin, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 250, 320, -1));
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/descarga.jpeg"))); // NOI18N
-        jLabel2.setText("LOGO");
-        BG.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 110, -1, -1));
+        lg.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/descarga.jpeg"))); // NOI18N
+        lg.setText("LOGO");
+        BG.add(lg, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 70, -1, -1));
 
-        jLabel3.setText("USUARIO");
-        BG.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 340, -1, -1));
+        txtpassword.setText("PASSWORD");
+        BG.add(txtpassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 310, -1, -1));
 
-        jLabel4.setText("USUARIO");
-        BG.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 220, -1, -1));
+        txtusuario.setText("USUARIO");
+        BG.add(txtusuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 220, -1, -1));
+        BG.add(Jpasswrd, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 340, 320, -1));
+
+        btnInicio.setText("INICIAR");
+        BG.add(btnInicio, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 410, -1, -1));
+
+        btnExit.setText("X");
+        BG.add(btnExit, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 40, 30));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -84,9 +93,9 @@ public class login extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
+    private void txtuserloginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtuserloginActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField1ActionPerformed
+    }//GEN-LAST:event_txtuserloginActionPerformed
 
     /**
      * @param args the command line arguments
@@ -109,18 +118,22 @@ public class login extends javax.swing.JFrame {
         }
         //</editor-fold>
 
+
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(() -> new login().setVisible(true));
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel BG;
+    private javax.swing.JPasswordField Jpasswrd;
     private javax.swing.JLabel back;
+    private javax.swing.JButton btnExit;
+    private javax.swing.JButton btnInicio;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JTextField jTextField1;
+    private javax.swing.JLabel lg;
     private javax.swing.JLabel logo;
+    private javax.swing.JLabel txtpassword;
+    private javax.swing.JTextField txtuserlogin;
+    private javax.swing.JLabel txtusuario;
     // End of variables declaration//GEN-END:variables
 }
